@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rahul Chavan — Software Quality Engineer</title>
+  <meta name="description" content="Rahul Chavan is a software quality engineer who builds automated regression suites for enterprise web applications, with a focus on authentication, identity and permissions.">
+  <meta name="theme-color" content="#f4f1ea">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rahul Chavan — Software Quality Engineer">
+  <meta property="og:description" content="Test automation in C# and .NET, with a focus on authentication, identity and permissions.">
+  <meta property="og:url" content="https://rahul-c-h.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315171c'/%3E%3Cpath d='M18 33l9 9 19-21' fill='none' stroke='%2346e08e' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Rahul Chavan, back to top">
+      <span class="brand-mark" aria-hidden="true">RC</span>
+      <span class="brand-name">Rahul Chavan</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#approach">Approach</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="pill pill-dark header-cta" href="#work">See my work <span aria-hidden="true">&darr;</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero pad" id="top">
+      <p class="eyebrow">Software quality engineering &middot; Test automation &middot; Authentication &amp; permissions</p>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 class="display">
+            <span class="line">I make</span>
+            <span class="line">software</span>
+            <span class="line accent">prove it</span>
+            <span class="line accent">works.</span>
+          </h1>
+          <p class="lede">I'm Rahul, a software quality engineer. I build and maintain automated regression suites for enterprise web applications, with a focus on authentication, identity and permissions.</p>
+        </div>
+        <aside class="hero-card">
+          <div class="matrix" aria-hidden="true"></div>
+          <p class="hero-tag">
+            <span class="hero-tag-label">Currently into</span>
+            <span class="hero-tag-value">Stable, fast regression suites</span>
+          </p>
+        </aside>
+      </div>
+      <ul class="strip" aria-label="Core skills">
+        <li>C# / .NET</li>
+        <li>NUnit</li>
+        <li>Selenium + Atata</li>
+        <li>API testing</li>
+        <li>SQL</li>
+        <li>CI pipelines</li>
+      </ul>
+    </section>
+
+    <section class="statement pad" aria-label="What I care about">
+      <p class="eyebrow">What I care about</p>
+      <p class="statement-text reveal">A test suite is only worth having if people trust it. I want every red result to mean one thing: <em>the product is broken.</em></p>
+    </section>
+
+    <section class="work pad" id="work" aria-labelledby="work-title">
+      <div class="section-head">
+        <p class="eyebrow">Selected work</p>
+        <h2 class="section-title" id="work-title">What I spend my days on.</h2>
+      </div>
+
+      <article class="project reveal">
+        <div class="project-meta">
+          <span class="project-num">01</span>
+          <span class="project-kind">Authentication</span>
+        </div>
+        <div class="project-body">
+          <h3>Regression coverage for sign-in and identity</h3>
+          <p>Automated UI and API tests for the ways people get into an enterprise application: password sign-in, external identity providers over SAML and OpenID Connect, OAuth2 clients, and two-factor authentication.</p>
+          <ul class="points">
+            <li>Page objects and fluent test flows, so a test reads like the scenario it checks.</li>
+            <li>Condition-based waits instead of fixed sleeps.</li>
+            <li>Test data created and cleaned up through the API, so every test stands alone.</li>
+          </ul>
+          <ul class="tags" aria-label="Tools">
+            <li>C#</li>
+            <li>NUnit</li>
+            <li>Selenium</li>
+            <li>Atata</li>
+          </ul>
+        </div>
+        <div class="project-art" aria-hidden="true">
+          <div class="flow">
+            <span class="node">User</span>
+            <span class="link"></span>
+            <span class="node">Sign-in page</span>
+            <span class="link"></span>
+            <span class="node node-ink">Identity provider</span>
+            <span class="link"></span>
+            <span class="node node-ok">Session granted</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-meta">
+          <span class="project-num">02</span>
+          <span class="project-kind">Permissions &amp; security</span>
+        </div>
+        <div class="project-body">
+          <h3>Proving who can do what</h3>
+          <p>Tests that show the right people can do the right things and nobody else can: group and role permissions, tenant isolation, and the plumbing around a session such as CSRF tokens, content security policy and cookie flags.</p>
+          <ul class="points">
+            <li>Positive and negative checks: what a user can see, and what must stay hidden.</li>
+            <li>Security headers and cookies verified on real responses, not assumed.</li>
+            <li>Cross-site scripting checks on pages that render user-entered text.</li>
+          </ul>
+          <ul class="tags" aria-label="Topics">
+            <li>Permissions</li>
+            <li>CSRF</li>
+            <li>CSP</li>
+            <li>XSS</li>
+          </ul>
+        </div>
+        <div class="project-art" aria-hidden="true">
+          <table class="perm">
+            <thead>
+              <tr><th></th><th>View</th><th>Edit</th><th>Delete</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>Admin</th><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+              <tr><th>Reviewer</th><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+              <tr><th>Guest</th><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-meta">
+          <span class="project-num">03</span>
+          <span class="project-kind">Pipelines</span>
+        </div>
+        <div class="project-body">
+          <h3>Keeping the pipeline trustworthy</h3>
+          <p>A regression pipeline is a product too. I triage failed runs, separate product defects from environment and test problems, and fix the tests that cry wolf.</p>
+          <ul class="points">
+            <li>Root-cause analysis on every failure, with a defect raised when the product is at fault.</li>
+            <li>Flaky tests treated as bugs: fixed or rewritten, not retried into silence.</li>
+            <li>Reports with logs and screenshots, so a failure can be understood without running it again.</li>
+          </ul>
+          <ul class="tags" aria-label="Tools">
+            <li>GitHub Actions</li>
+            <li>Azure DevOps</li>
+            <li>SQL</li>
+            <li>PowerShell</li>
+          </ul>
+        </div>
+        <div class="project-art" aria-hidden="true">
+          <ul class="pipe">
+            <li class="done"><span>Build</span><i></i></li>
+            <li class="done"><span>Deploy</span><i></i></li>
+            <li class="running"><span>Regression</span><i></i></li>
+            <li class="todo"><span>Report</span><i></i></li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="demo" id="demo" aria-labelledby="demo-title">
+      <div class="demo-inner pad">
+        <div class="demo-head">
+          <p class="eyebrow">Try it</p>
+          <h2 class="section-title" id="demo-title">A regression run, in miniature.</h2>
+          <p class="demo-lede">Run the suite, then switch on a flaky test or a real defect. They look alike for a moment and need opposite fixes: one in the test, one in the product.</p>
+        </div>
+
+        <div class="runner" id="runner">
+          <div class="runner-bar">
+            <span class="runner-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="runner-title">auth-regression &middot; run #<span id="run-number">0</span></span>
+            <span class="runner-state" id="runner-state" data-state="idle">idle</span>
+          </div>
+          <ol class="runner-list" id="runner-list"></ol>
+          <p class="runner-summary" id="runner-summary" aria-live="polite">Press &ldquo;Run suite&rdquo; to start.</p>
+          <noscript><p class="runner-summary">This demo needs JavaScript.</p></noscript>
+        </div>
+
+        <div class="demo-side">
+          <div class="controls">
+            <button type="button" class="btn btn-mint" id="btn-run">Run suite</button>
+            <button type="button" class="btn btn-ghost" id="btn-flaky" aria-pressed="false">Include a flaky test</button>
+            <button type="button" class="btn btn-ghost" id="btn-defect" aria-pressed="false">Include a real defect</button>
+            <button type="button" class="btn btn-ghost" id="btn-reset">Reset</button>
+          </div>
+          <dl class="readouts">
+            <div><dt>Passed</dt><dd id="out-passed">0</dd></div>
+            <div><dt>Failed</dt><dd id="out-failed">0</dd></div>
+            <div><dt>Retries</dt><dd id="out-retries">0</dd></div>
+            <div><dt>Duration</dt><dd id="out-duration">0.0 s</dd></div>
+          </dl>
+          <p class="demo-note">Illustrative only. The test names, timings and results are made up for this demo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="approach pad" id="approach" aria-labelledby="approach-title">
+      <div class="section-head">
+        <p class="eyebrow">How I work</p>
+        <h2 class="section-title" id="approach-title">Three rules I keep.</h2>
+      </div>
+      <ol class="rules">
+        <li class="rule reveal">
+          <span class="rule-num">01</span>
+          <h3>Wait for conditions, not clocks.</h3>
+          <p>A fixed sleep is a guess. I wait for what the page or the API is actually doing, which makes tests both faster and steadier.</p>
+        </li>
+        <li class="rule reveal">
+          <span class="rule-num">02</span>
+          <h3>Make failures explain themselves.</h3>
+          <p>An assertion message, a log line and a screenshot should tell you what broke and where, before anyone reaches for the rerun button.</p>
+        </li>
+        <li class="rule reveal">
+          <span class="rule-num">03</span>
+          <h3>Find the root cause.</h3>
+          <p>A red test gets investigated the same day. It is a product defect, an environment problem or a bad test, and each one has a different fix.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="about pad" id="about" aria-labelledby="about-title">
+      <div class="about-grid">
+        <div class="about-head">
+          <p class="eyebrow">About me</p>
+          <h2 class="section-title" id="about-title">I like the part where it has to actually work.</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p>I'm a software quality engineer. I work on test automation for enterprise web applications, mostly in C# and .NET: UI and API tests with NUnit, Selenium and Atata, page objects that stay readable, and regression pipelines that people can rely on.</p>
+          <p>My focus is authentication and access: sign-in flows, identity providers, two-factor authentication, permissions, and the security headers around a session. It is the kind of work where a small mistake matters, which is exactly why I like testing it.</p>
+          <dl class="toolbox">
+            <div><dt>Languages</dt><dd>C#, .NET, SQL, PowerShell</dd></div>
+            <div><dt>Test frameworks</dt><dd>NUnit, Selenium WebDriver, Atata, FluentAssertions</dd></div>
+            <div><dt>Pipelines and tracking</dt><dd>GitHub Actions, Azure DevOps, Jira</dd></div>
+            <div><dt>Reporting</dt><dd>ExtentReports, with logs and screenshots as evidence</dd></div>
+          </dl>
+          <a class="pill pill-dark" href="#contact">Get in touch <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow">Contact</p>
+      <h2 class="display contact-title" id="contact-title">Let's ship something reliable.</h2>
+      <div class="contact-links">
+        <a class="contact-link" href="https://github.com/Rahul-c-h" rel="me noopener">
+          <span>GitHub</span>
+          <small>github.com/Rahul-c-h</small>
+          <span aria-hidden="true">&nearr;</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Rahul Chavan</span>
+    <span>Quality engineer</span>
+    <span>&copy; 2026</span>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
